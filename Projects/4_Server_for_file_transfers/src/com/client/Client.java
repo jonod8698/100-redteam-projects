@@ -42,7 +42,7 @@ public class Client {
                     File arquivo = file.getSelectedFile();
                     sendFile(arquivo.getPath());
                     dataInputStream.close();
-                    dataInputStream.close();
+                    dataOutputStream.close();
                     socket.close();
                 }
             } catch (Exception e) {
